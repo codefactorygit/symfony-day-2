@@ -1,0 +1,15 @@
+test: # name of the route
+   path: /test 
+   controller: App\Controller\TestController::index # name of the controller:: function name 
+
+home: # name of the route
+   path: /
+   controller: App\Controller\TestController::home
+
+random: # name of the route
+   path: /random/{num}
+   controller: App\Controller\RandomController::index
+
+printName: # name of the route
+   path: /print/{name}
+   controller: App\Controller\RandomController::printName
